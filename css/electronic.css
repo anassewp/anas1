@@ -1,0 +1,330 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box ;
+  scroll-behavior: smooth;
+  flex-wrap: wrap;
+  
+}
+:root {
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --main-color: #754ef9;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .2);
+}
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  margin: 0;
+  background-color:var(--bg-color);
+  color:var(--main-color);
+  text-align: center;
+  padding: 20px;
+  /* border:solid var(--main-color) 2px; */
+  flex-wrap:nowrap;
+
+}
+
+nav {
+  background-color: #f9fbfc ;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom:solid var(--main-color) 3px ;
+  border-top:solid var(--main-color) 3px ;
+  flex-wrap: nowrap;
+  
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 20px;
+  transition: 0.7 ease;
+  flex-wrap: nowrap;
+
+}
+a {
+  text-decoration: none;
+  color:var(--text-color);
+}
+nav a:hover{
+  color:var(--main-color)
+} 
+
+section {
+  margin: 20px 0;
+  width: 100%;
+  min-height: 120vh;
+}
+
+.s1{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: space-around;
+  background-color:var(--bg-color);
+  color: var(--text-color);
+  position: relative;
+  top: 80px;
+  /* border: solid saddlebrown 3px; */
+}
+.s1 .min .text h2{
+
+  font-size: 30px;
+
+}
+.s1 .min .text h2 span{
+  color:var(--main-color);
+  font-size: 35px;
+  font-weight: 500px;
+}
+.s1 .min .text p{
+  font-size: 30px;
+}
+.s1 .min .btn {
+  border-radius: 10px;
+  background-color:var(--main-color);
+  font-size: 1.2em;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  color:var(--bg-color);
+  padding: 15px 50px;
+  transition: 0.7s ease;
+  border: solid var(--main-color) 3px;
+}
+.s1 .min .btn:hover { 
+  background-color:var(--bg-color);
+  color: var(--main-color);
+}
+.s1 .min .icon a{
+  font-size: 20px;
+  padding-right: 5px;
+  margin: 0 7px;
+  position: relative;
+  top: 20px;
+  font-weight: 600px;
+  transition: 0.5s ease;
+
+}
+.icon a:hover{
+  font-size: 25px;
+  color: var(--main-color);
+
+}
+.s2{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: space-around;
+  background-color:var(--bg-color);
+  color: var(--text-color);
+  position: relative;
+  top: 80px;
+  /* border: solid green 3px; */
+  flex-wrap: wrap;
+}
+.s2 .text2{
+  max-width: 44rem;
+}
+ .s2 .text2 h2{
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: .3;
+  margin-bottom: 15px;
+ }
+ .s2 .text2 h2 span{
+  color: var(--main-color);
+ }
+ .s2 .text2 p{
+  font-size: 1.6rem;
+  position: relative;
+  top: 15px;
+ }
+ .s2 .text2 a{
+  position: relative;
+  top: 40px;
+  font-size: 20px;
+  padding:10px 20px;
+  border: solid var(--main-color) 2px;
+  border-radius: 5px 20px;
+  background-color: var(--main-color);
+  color:var(--white-color);
+  transition: 0.7s ease;
+  
+ }
+ .s2 .text2 a:hover{
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  padding: 15px 25px;
+
+ }
+.s3{
+  /* border: solid yellow 3px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:var(--bg-color);
+  color: var(--text-color);
+  height: 160vh;
+  
+  
+
+}
+.s3 h2{
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2.5em;
+  color: var(--main-color);
+  position: relative;
+  top: 30px;
+}
+.s3 .contenr {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2.9rem;
+  /* background-color: #754ef9; */
+  /* padding: 0 50px; */
+  position: relative;
+  right: 10%;
+  top: 30px;
+}
+.s3 .contenr .portfolio-box{
+  position: relative;
+  display: flex;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+  overflow: hidden;
+}
+.s3 .portfolio-box img{
+  
+  width: 100%;
+  transition: .5s ease;
+}
+.s3 .portfolio-box:hover img {
+  transform: scale(1.1);
+ 
+}
+.s3 .portfolio-box .portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  opacity: 0;
+  transition: .5s ease; 
+}
+.s3 .portfolio-box:hover .portfolio-layer {
+  opacity: 1;
+}
+.s4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:var(--bg-color);
+  color: var(--text-color);
+  /* position: relative;
+  top: 80px; */
+  /* border: solid red 3px; */
+
+}
+.s4 .card{
+  display: flex;
+  justify-content: center;
+ align-items: center;
+ /* flex-direction: ; */
+ /* background-color:#fdfdfd; */
+ position: relative;
+ top: 10%;
+}
+.s4  .card_icon{
+  background-color: white;
+  width: 20.25em;
+  box-shadow: 0 5px 25px rgba(1,1,1,0.5);
+  border-radius: 10px;
+  padding: 50px;
+  margin: 15px 50px;
+  transition: 0.7s ease;
+}
+.s4   .card_icon a{
+  color: blue;
+  font-size: 8em;
+  text-align: center;
+  position: relative;
+  right: 60px;
+  /* bottom: 10px; */
+  
+}
+.card_icon:hover{
+  transform: scale(1.2);
+}
+.s4 h1{
+  text-align: center;
+  /* padding-bottom: 20px; */
+  font-size: xxx-large;
+  color: var(--main-color);
+  /* position: relative;
+  top: 100px; */
+}
+.s4 h2{
+  text-align: center;
+  /* padding-bottom: 20px; */
+  font-size: xx-large;
+}
+.s4 .buttm a{
+  font-size: 30px ;
+  border: solid var(--main-color) 3px;
+  padding:10px 10px;
+  margin: 20px -10px;
+  border-radius: 10px 20px;
+  position: relative;
+  top: 15px;
+  
+ 
+}
+.buttm a:hover{
+  background-color: red;
+  color:white;
+}
+.f{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  height: 50px;
+  color: rgb(15, 6, 6);
+
+}
+.f a{
+  padding:0 10px ;
+  font-size: 20px;
+  color: var(--white-color);
+}

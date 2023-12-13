@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="electronic.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/electronic.css" />
+    <title>Electronic yemen</title>
+    <style>
+      .contener{
+        display: grid;
+        justify-items: center;
+        grid-auto-rows: minmax(100vh,auto);
+        gap: 200px 0;
+        position: absolute;
+        width: 100%;
+        top: 150px;
+        scroll-behavior: smooth;
+      }
+      .div{
+        /* background-color: rgb(116, 70, 11); */
+        width: 70%;
+      }
+      .folo{
+        display: grid;
+        /* width: 80%; */
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: 50px repeat(2,1fr);
+        /* background-color: aqua; */
+        gap: 10px;
+        position: relative;
+      }
+        
+      .f1{
+        display: grid;
+        justify-items: center;
+        background-color: aliceblue;
+        /* background-image: url(../img/s3-pic01.svg); */
+        border: solid red 3px;
+        border-radius: 30px 20px;
+        flex-wrap: wrap;
+        transition: .6s;
+      }
+      .m1{
+        background-image: url(../img/w1.jpg);
+        background-size: cover;
+      }
+      .m2{
+        background-image: url(../img/w2.jpg);
+        background-size: cover;
+      }
+      .m3{
+        background-image: url(../img/w3.jpg);
+        background-size: cover;
+      }
+      .m4{
+        background-image: url(../img/w4.jpg);
+        background-size: cover;
+      }
+      .m5{
+        background-image: url(../img/w5.jpg);
+        background-size: cover;
+      }
+      .m6{
+        background-image: url(../img/w6.jpg);
+        background-size: cover;
+      }
+      .h2{
+        grid-column: 1/4;
+        text-align: center;
+        font-size: 30px;
+        color: blue;
+      }
+      .f1:hover{
+        transform: scale(1.1);
+        border-color: yellow;
+        border-radius: 50px 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>خدمات انستا</h1>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">الصفحة الرئيسية</a>
+          </li>
+          <li><a class="a1" href="#a1">متابعات</a></li>
+          <li><a class="a" href="#a2"> لايكات</a></li>
+          <li><a class="a" href="#a3"> تعليقات</a></li>
+          <li><a class="a" href="#a4">مشاهدات </a></li>
+        </ul>
+      </nav>
+    </header>
+    <body>
+      <div class="contener">
+        <div id="a1" class="div folo">
+          <div class="h2"><h2>متابعات انستا</h2></div>
+          <div class="f1 m1">1</div>
+          <div class="f1 m2">2</div>
+          <div class="f1 m3">3</div>
+          <div class="f1 m4">4</div>
+          <div class="f1 m5">5</div>
+          <div class="f1 m6">6</div>
+        </div>
+        <div id="a2" class="div folo">
+          <div class="h2"><h2>لايكات انستا</h2></div>
+          <div class="f1 m1">1</div>
+          <div class="f1 m2">2</div>
+          <div class="f1 m3">3</div>
+          <div class="f1 m4">4</div>
+          <div class="f1 m5">5</div>
+          <div class="f1 m6">6</div>
+        </div>
+        <div id="a3" class="div folo">
+          <div class="h2"><h2>تعليقات انستا</h2></div>
+          <div class="f1 m1">1</div>
+          <div class="f1 m2">2</div>
+          <div class="f1 m3">3</div>
+          <div class="f1 m4">4</div>
+          <div class="f1 m5">5</div>
+          <div class="f1 m6">6</div>
+        </div>
+        <div id="a4" class="div folo">
+          <div class="h2"><h2>مشاهدات انستا</h2></div>
+          <div class="f1 m1">1</div>
+          <div class="f1 m2">2</div>
+          <div class="f1 m3">3</div>
+          <div class="f1 m4">4</div>
+          <div class="f1 m5">5</div>
+          <div class="f1 m6">6</div>
+        </div>
+    </body>
