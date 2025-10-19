@@ -9,10 +9,23 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 require_once __DIR__ . '/config.php';
 
-$name = trim(filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS));
+$name_input = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
+$name = ($name_input === null || $name_input === false) ? '' : trim($name_input);
+
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-$company = trim(filter_input(INPUT_POST, 'company', FILTER_SANITIZE_SPECIAL_CHARS)) ?: null;
-$message = trim(filter_input(INPUT_POST, 'message', FILTER_UNSAFE_RAW));
+
+$company_input = filter_input(INPUT_POST, 'company', FILTER_SANITIZE_SPECIAL_CHARS);
+if ($company_input === null || $company_input === false) {
+    $company = null;
+} else {
+    $company = trim($company_input);
+    if ($company === '') {
+        $company = null;
+    }
+}
+
+$message_input = filter_input(INPUT_POST, 'message', FILTER_UNSAFE_RAW);
+$message = ($message_input === null || $message_input === false) ? '' : trim($message_input);
 
 if (!$name || !$email || !$message) {
     http_response_code(422);
